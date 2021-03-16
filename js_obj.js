@@ -43,3 +43,9 @@ while(i>=0){
   i--
 
 }console.log(myArray)
+var total=0
+ for(i=0;i<myArray.length;i++)
+ {
+   total+=myArray[i]
+ }
+ console.log(total)
