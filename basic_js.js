@@ -24,7 +24,7 @@ console.log(js.shift())//to remove the first element
 js.unshift(["hello","hi"])//to add element or array at begining'
 console.log(js[1]);//to access array
 
-/*if else and different operations like 
+/*if else and different operations like
  * ==
  * ===
  * !=
@@ -33,7 +33,7 @@ console.log(js[1]);//to access array
  * <
  * >
  * >=
- * logical and ,logical or 
+ * logical and ,logical or
  * */
 
 function test(a) { // function keyword used to create a new function with parm takes a variable
@@ -47,7 +47,7 @@ function test(a) { // function keyword used to create a new function with parm t
     else if (a <25 || a <= 30) {
         return "number"
     }//logical or
-    
+
     else if (a === 100) {
         return "number is strictly equal to 100"
     }
@@ -81,7 +81,7 @@ function week(day) {
         case "friday": return "5th day congratulations you have survived 5 days only one day is remaining"
         case "saturday": return "Ohh god thanks only one day remaining"
         case "sunday": return "get ready monday is coming !!!!"
-        default: return "HEYY CAN You please enter a correct day. I have only 7 day a week " 
+        default: return "HEYY CAN You please enter a correct day. I have only 7 day a week "
     }
 }
 console.log("Switch using Monday",week("Monday"))
