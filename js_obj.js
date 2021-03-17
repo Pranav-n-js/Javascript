@@ -31,3 +31,4 @@ var myMusic = [
   }
 ];
 console.log(myMusic[0]["formats"][1])
+console.log(myMusic.length());
