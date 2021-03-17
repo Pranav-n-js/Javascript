@@ -31,21 +31,3 @@ var myMusic = [
   }
 ];
 console.log(myMusic[0]["formats"][1])
-
-//while loop in js
-
-var myArray = [];
-var i=2;
-while(i>=0){
-  for(j=0;j<=2;j++){
-  myArray.push(i)
-}
-  i--
-
-}console.log(myArray)
-var total=0
- for(i=0;i<myArray.length;i++)
- {
-   total+=myArray[i]
- }
- console.log(total)
