@@ -12,4 +12,15 @@ const arr=[1,2,3] //array has become immutable
 //to change array variable
 arr[1]=5;
 //above code will change array variable
-//arr=[3,5,9] is not possible 
+//arr=[3,5,9] is not possible
+
+const OBJ={
+  "PI":3.14
+} //this wont make object read only so
+Object.freeze(OBJ)//this will make object readonly
+
+//inline function in es6 js
+const myFunc = function() {
+  return "Inline function dont have names"
+}
+console.log(myFunc)
