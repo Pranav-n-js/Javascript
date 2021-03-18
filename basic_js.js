@@ -36,7 +36,7 @@ console.log(js[1]);//to access array
  * logical and ,logical or
  * */
 
-function test(a) { // function keyword used to create a new function with parm takes a variable
+export function test(a) { // function keyword used to create a new function with parm takes a variable
 
     if (a <= 10) {
         return "a is less than or equal to 10";

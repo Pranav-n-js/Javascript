@@ -39,11 +39,11 @@ return args.reduce((result,item) => result+item,0)
 console.log(sum(25,36,44)); //...args converts parameter to array  reduce will iterates array and passes th value to next function
 
 const obj={
-  "hi":"hello",
-  "welcome":"Thanks"
+  hi:"hello",
+  welcome:"Thanks"
 }
 const {hi, welcome}= obj
-console.log(hi,welcome)//assigning statemnts here property name and variable name should be same
+console.log({hi,welcome})//assigning statemnts here property name and variable name should be same
 //if want to change var name while assigned then
 
 const{hi:greet,welcome:giveup}= obj
@@ -51,8 +51,8 @@ console.log(greet,giveup);
 
 const oio={
   "greeting":{
-    "hello":"hi",
-    "thanks":"Welcome"
+    hello:"hi",
+    thanks(){return "Welcome"} // funtions in objects
   },
   "wishing":{
     "cong":"thanks",
@@ -70,3 +70,7 @@ console.log(a,b,c);
 console.log(a,b,c);
 const [,,...a1]=[1,2,3,4,5]
 console.log("to slice array using destructuring",a1);
+let eng=` ${oio.greeting.hello} how are you?
+hope u are fine ${oio.wishing.cong}`
+
+console.log(eng);

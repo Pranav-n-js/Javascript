@@ -32,5 +32,5 @@ function mutationFormula(replaceObject,sourceObject){
 }
 sourceObject={ name: "pranav", profession: "programmer", address: { street: "1st Lane", place: "Mangalore",dist:{taluk:"manglore", place: "something"} } }
 var object= mutationFormula({name: "Ganesh",place:"kottara"}, sourceObject)
-//console.log(object)
+console.log(object)
 //console.log();

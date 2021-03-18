@@ -63,4 +63,4 @@ console.log(parseInt("10011",2))//here 2 is for converting from binary to intege
 console.log("ternary condition",15 < 20 ? "15 is smaller": "15 is larger")
 // after question mark whatever is executed if condition becomes true else after ":" will be executed
 
-(15===0) ? "zero": (num>0)? "positive":"negative" 
+console.log((15===0) ? "zero": (num>0)? "positive":"negative" );
