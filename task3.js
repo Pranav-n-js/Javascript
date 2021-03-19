@@ -19,7 +19,7 @@ else{
 }
 }
 //subDomain("https://apps.juegostudio.com")
-checkIpAddress("11")
-checkIpAddress("11.234.52.1244")
-checkIpAddress("256")
-checkIpAddress("1111")
+checkIpAddress("11:234:52")
+checkIpAddress("11.234.52.124")
+checkIpAddress("11:234:52:124")
+checkIpAddress("11:234:52:256")
