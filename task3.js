@@ -18,7 +18,7 @@ else{
   console.log("NO SUBDOMAIN");
 }
 }
-//subDomain("https://apps.juegostudio.com")
+subDomain("https://apps.juegostudio.com")
 checkIpAddress("11:234:52")
 checkIpAddress("11.234.52.124")
 checkIpAddress("11:234:52:124")
