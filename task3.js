@@ -1,8 +1,8 @@
-/*function checkIpAddress(IpAddress){
-  console.log(/([0-1]\d\d|2[0-5][0-5])\./g.test(IpAddress));
+function checkIpAddress(ipAddress){
+  console.log(/^([01]?[0-9][0-9]?|25[0-5]|2[0-4][0-9])(\.|:)([01]?[0-9][0-9]?|25[0-5]|2[0-4][0-9])(\.|:)([01]?[0-9][0-9]?|25[0-5]|2[0-4][0-9])(\.|:)([01]?[0-9][0-9]?|25[0-5]|2[0-4][0-9])$/.test(ipAddress));
 }
-checkIpAddress(265)
-*/
+
+
 function subDomain(url){
 var check=/\w+?w*\.\w+\.\w+/g.test(url)
 
@@ -18,4 +18,8 @@ else{
   console.log("NO SUBDOMAIN");
 }
 }
-subDomain("https://apps.juegostudio.com")
+//subDomain("https://apps.juegostudio.com")
+checkIpAddress("11")
+checkIpAddress("11.234.52.1244")
+checkIpAddress("256")
+checkIpAddress("1111")
