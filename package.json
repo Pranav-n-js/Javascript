@@ -1,0 +1,22 @@
+{
+  "name": "jas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "task1.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pranav-n-js/Javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pranav-n-js/Javascript/issues"
+  },
+  "homepage": "https://github.com/Pranav-n-js/Javascript#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
