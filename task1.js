@@ -16,7 +16,7 @@ Object.entries(sourceObject).forEach((sourceObjectEntries) => {
 
 return sourceObject
 }
-function mutationFormula(replaceObject,sourceObject){
+function mutationFormula(sourceObject,replaceObject){
 
   Object.keys(replaceObject).forEach((key) => {
 
@@ -30,7 +30,8 @@ function mutationFormula(replaceObject,sourceObject){
   console.log(sourceObject);
  return sourceObject
 }
-sourceObject={ name: "pranav", profession: "programmer", address: { street: "1st Lane", place: "Mangalore",dist:{taluk:"manglore", place: "something"} } }
-var object= mutationFormula({name: "Ganesh",place:"kottara"}, sourceObject)
-console.log(object)
+//sourceObject={ name: "pranav", profession: "programmer", address: { street: "1st Lane", place: "Mangalore",dist:{taluk:"manglore", place: "something"} } }
+//var object= mutationFormula({name: "Ganesh",place:"kottara"}, sourceObject)
+//console.log(object)
 //console.log();
+module.exports = mutationFormula;
