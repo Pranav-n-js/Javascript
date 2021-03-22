@@ -1,14 +1,19 @@
 function exchangekeyValues(sourceObject) {
+
   Object.keys(sourceObject).forEach((keys) => {
-    if(sourceObject.hasOwnProperty(sourceObject[keys])){
-      value= " "+keys
-      sourceObject[sourceObject[keys]] += value
+    let orginalValue=sourceObject[keys]
+    delete sourceObject[keys]
+    if(sourceObject.hasOwnProperty(orginalValue)){
+      let value= " "+keys
+      sourceObject[orginalValue] += value
     }
     else{
-      sourceObject[sourceObject[keys]]=keys
+
+      sourceObject[orginalValue]=keys
     }
-      delete sourceObject[keys]
+
   });
   return sourceObject
 }
-console.log(exchangekeyValues({10:"hi",11:"hello",13:"how",14:"how"}))
+console.log(exchangekeyValues({1:"a",2:"b",3:"c",4:"d",5:"d",e:"e"}))
+module.exports = exchangekeyValues;

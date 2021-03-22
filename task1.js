@@ -1,4 +1,5 @@
 function checkingNestedObject(replaceObject,sourceObject){
+
 Object.entries(sourceObject).forEach((sourceObjectEntries) => {
     if (typeof(sourceObjectEntries[1])==="object"){
 
@@ -9,7 +10,7 @@ Object.entries(sourceObject).forEach((sourceObjectEntries) => {
           sourceObject[sourceObjectEntries[0]][replaceObjectKey]=replaceObject[replaceObjectKey]
         }
       });
-      objectReplaced=checkingNestedObject(replaceObject,sourceObjectEntries[1])
+      let objectReplaced=checkingNestedObject(replaceObject,sourceObjectEntries[1])
       sourceObject[sourceObjectEntries[0]]=objectReplaced
     }
 });
@@ -31,7 +32,7 @@ function mutationFormula(sourceObject,replaceObject){
  return sourceObject
 }
 //sourceObject={ name: "pranav", profession: "programmer", address: { street: "1st Lane", place: "Mangalore",dist:{taluk:"manglore", place: "something"} } }
-//var object= mutationFormula({name: "Ganesh",place:"kottara"}, sourceObject)
+var object=mutationFormula({name:"pranav",place:"manglore",address:{street:"AKG",taluk:"kundapur",caddress:{home:"aaa",street:"AKG",place:"Kundapur",taluk:"kundapur"}}},{name:"Ganesh",place:"kotara",street:"1st lane",taluk:"manglore",home:"Ganesh"})
 //console.log(object)
 //console.log();
 module.exports = mutationFormula;
