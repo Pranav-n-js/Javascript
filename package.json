@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Pranav-n-js/Javascript#readme",
   "devDependencies": {
     "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "uuid": "^8.3.2"
   }
 }
