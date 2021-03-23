@@ -8,25 +8,44 @@ In this the basic JavaScript operations are written like
   * various operations on int or decimal variable like  ** Add, Sub, Multiply, Div, 
 * Array
   * initializing array and storing values inside it
-  * use of .push, .pop, .unshift, .shift
+  * use of **.push, .pop, .unshift, .shift**
   * Accessing an Array
 * Comparison operations like **'===', '==', '<', '<=', '>', '>=', '!=', '!==', '&&', '||'**
 * Conditional operators like **if, else,if else if**
-* functions
-* switch statements
+* Using **functions**
+* **switch statements** alternate to If else if
 #
 # **[js_loops.js](https://github.com/Pranav-n-js/Javascript/blob/main/js_loops.js)** working of loops in JavaScript, Math function and ternary condition
 #
-1. While loops
-2. For loops
-3. Recursion
-4. Math.random
-5. Converting String to Integer
-6. Ternary Condition
+In this file the usage of loops in JavaScript are mentioned 
+1. **While loops**
+2. **For loops**
+3. Example for **Recursion** in JavaScript 
+4. how to use **Math.random** and how to randomly choose variable in  range
+5. how to **convert String to Integer** eg '10' to 10
+6. What is **Ternary Condition** and how we can use it in JavaScript
+#
+# **[array.js](https://github.com/Pranav-n-js/Javascript/blob/main/array.js)** JavaScript arrays
+#
+* initializing Arrays
+* various operations that can be applied to array like **.pop, .push, .shift, .unshift, .splice, spread operator, .indexOf**
+* Accessing Object and Object functions
+* Creating function with parameters 
 #
 # **[js_obj.js](https://github.com/Pranav-n-js/Javascript/blob/main/js_obj.js)** JavaScript objects
 #
-* 
+This file talk about the using Objects in JavaScripts and Operations on JavaScript
+* How to **create an Objects** initialize it
+* Deleting specific Property value in Object using **delete**
+* usage of **.hasOwnProperty("")**, **Object.keys()**, **Object.values()**
+* Arrays inside Objects and Vice-versa
+* Accessing Object values
+
+#
+# **[task1.js](https://github.com/Pranav-n-js/Javascript/blob/main/task1.js)** Javascript task based on Objects
+#
+This progran can change the Object value based on the  provided Property and value Nested Objects value can also be used 
+**[task1.test.js](https://github.com/Pranav-n-js/Javascript/blob/main/task1.test.js)**  is the unit test fine which is used to test the above program using JEST 
 #
 # **[es6.js](https://github.com/Pranav-n-js/Javascript/blob/main/es6.js)** some of ES6 features in JavaScript
 #
