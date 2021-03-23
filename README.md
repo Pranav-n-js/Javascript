@@ -65,7 +65,7 @@
    * using **\`\`**
 #
 # **[classnconst.js](https://github.com/Pranav-n-js/Javascript/blob/main/classnconst.js)** Class and constructor in JavaScript with Promise 
-#
+   #
    * Creating classes
    * Initializing classes
    * Creating a promise
@@ -73,13 +73,13 @@
 #
 # **[regexp.js](https://github.com/Pranav-n-js/Javascript/blob/main/regexp.js)** Regular Expression in javascript 
 #
-Using Regular Expression in javascript to match or check if thr pattern exists in the expression 
-used .match and .test to extract and to extract and to check the pattern in regular expression
+   Using Regular Expression in javascript to match or check if thr pattern exists in the expression 
+   used .match and .test to extract and to extract and to check the pattern in regular expression
 #
 # [task3.js](https://github.com/Pranav-n-js/Javascript/blob/main/task3.js)Javascript verify a valid IP address
 ###### [task3.test.js](https://github.com/Pranav-n-js/Javascript/blob/main/task3.test.js) contains the test for valid IP address using JEST
 #
 # [subDomainTask.js](https://github.com/Pranav-n-js/Javascript/blob/main/subDomainTask.js) Extracting Subdomain from Website link using Regular Expresssion 
-JavaScript code to extract the subdomain from the website using Regular Expression passing the website link to the function
+   JavaScript code to extract the subdomain from the website using Regular Expression passing the website link to the function
 ###### in [subDomainTask.test.js](https://github.com/Pranav-n-js/Javascript/blob/main/subDomainTask.test.js) contains the test for subdomain using JEST
 
