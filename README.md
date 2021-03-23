@@ -10,4 +10,10 @@ In this the basic JavaScript operations are written like
   * initializing array and storing values inside it
   * use of .push, .pop, .unshift, .shift
   * Accessing an Array
-* Comparison operator like **'===', '==', '<', '<=', '>', '>=', '!=', '!==', '&&', '||'**
+* Comparison operations like **'===', '==', '<', '<=', '>', '>=', '!=', '!==', '&&', '||'**
+* Conditional operators like **if, else,if else if**
+* functions
+* switch statements
+#
+# **[js_loops.js](https://github.com/Pranav-n-js/Javascript/blob/main/basic_js.js)** 
+
