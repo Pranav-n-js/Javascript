@@ -3,6 +3,8 @@
 is used like this*/
 var newVariable ; // used to create a new variable
 var a=10; // assigining the value to new variable
+var bool=true
+
 var b=10; //another way of assigining variable
 var thisIsCammelCase = "most Used variable method" // storing string and usage of cammel case
 var d=10.012 // decimal variable
