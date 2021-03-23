@@ -16,6 +16,8 @@ objects["5"]="Properties is changed also data"
 objects['add']="WE can add new objects like this or using dot"
 delete objects.add //to delete
 console.log(objects.hasOwnProperty("property"))//to check wether the property is present or not
+console.log("Keys in Objects",objects.keys("property"))
+console.log("values in Objects",objects.values("property"))
 
 var myMusic = [
   {
