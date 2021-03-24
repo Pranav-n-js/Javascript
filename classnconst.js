@@ -1,6 +1,6 @@
 //import {test} from './basic_js.js';
 //type="module" in script tag of html is nessasry to work
-
+/*
 class className{
   constructor(constName){
     this.constName=constName
@@ -8,12 +8,13 @@ class className{
 }
 let classes = new className("exampleConstructor")
 console.log(classes.constName)
-//console.log(test(100));
-const makePromise= new Promise((resolve,reject)=>{
+//console.log(test(100));*/
+const makePromise = new Promise((resolve, reject) => {
+    var data="hi"
   if(false){
     resolve("Challenege solved")
   }else{
-    reject("solve Challenege")
+    reject(data)
   }
 });
 

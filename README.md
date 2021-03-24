@@ -83,10 +83,10 @@
    JavaScript code to extract the subdomain from the website using Regular Expression passing the website link to the function
 ###### in [subDomainTask.test.js](https://github.com/Pranav-n-js/Javascript/blob/main/subDomainTask.test.js) contains the test for subdomain using JEST
 <<<<<<< HEAD
-# [restAPITask.js](https://github.com/Pranav-n-js/Javascript/blob/main/restAPITask.js) 
+# [restAPITask.js](https://github.com/Pranav-n-js/Javascript/blob/main/restAPITask.js)
 =======
 #
-#[restAPITask](https://github.com/Pranav-n-js/Javascript/blob/main/restAPITask.js) to access the data using API using fetch
+# [NrestAPITask](https://github.com/Pranav-n-js/Javascript/blob/main/restAPITask.js) to access the data using API using fetch
 #
   fetch is used to make an API call and Promise is used to handle fetch
 >>>>>>> 02f92aff21bed4906a09894e5aad0d7fb8222e6b

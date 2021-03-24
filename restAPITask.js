@@ -1,30 +1,32 @@
-/*
-let request = new XMLHttpRequest();
-request.onload=function() {
-  console.log(request.responseText);
+const fetch = require("node-fetch");
+let requestFetch = (url) => {
+    var dToken = Math.floor(Math.random() * Date.now() * Math.random())
+    var method = "user.login"
+    var appKey = 20191226
+    var loginType = 3
+    console.log("1")
+    return fetch(url, {
+        method: "POST",
+        headers: { "Content-type": "application/x-www-form-urlencoded" },
+        body: `device_token=${dToken}&methodName=${method}&applicationKey=${appKey}&login_type=${loginType}`
+    })
 }
 
-var device_token = Math.floor(Math.random()*Date.now()*Math.random())
-var sendData=`device_token=${device_token}&methodName=user.login&applicationKey=20191226&login_type=3`
-request.open("POST","http://juegostudio.in/SUGI-APP/V2/rest.php",true)
-request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-request.send(sendData)
-*/
-var data=""
-var device_token = Math.floor(Math.random()*Date.now()*Math.random())
-const fetchPromise=fetch("http://juegostudio.in/SUGI-APP/V2/rest.php", {
-    method: "POST",
-    headers: { "Content-type": "application/x-www-form-urlencoded"},
-    body:`device_token=${device_token}&methodName=user.login&applicationKey=20191226&login_type=3`
+var data = requestFetch("http://juegostudio.in/SUGI-APP/V2/rest.php")
+data.then(response => {
+    return response.json()
+}).then(data => {
+    if (data['responseCode'] === 207) {
+        console.log(`Data cannot be fetched from the API, ${data['responseInfo']}`);
+    }
+    else {
+        console.log(data)
+        console.log("success");
+    }
+}, error => {
+        console.log("error");
 })
-fetchPromise.then(response => {
-  return response.json()
-}).then(data=>{
-  if(data['responseCode']===207){
-    console.log("Data cannot be fetched from the API",data['responseInfo']);
-  }
-  console.log(data);
+data.catch(error => {
+    console.log("error");
 })
-fetchPromise.catch(error =>  {
-  console.log("unable to handle",error);
-})
+module.exports = requestFetch
