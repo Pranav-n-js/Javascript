@@ -20,6 +20,9 @@ const fetchPromise=fetch("http://juegostudio.in/SUGI-APP/V2/rest.php", {
 fetchPromise.then(response => {
   return response.json()
 }).then(data=>{
+  if(data['responseCode']===207){
+    console.log("Data cannot be fetched from the API",data['responseInfo']);
+  }
   console.log(data);
 })
 fetchPromise.catch(error =>  {
