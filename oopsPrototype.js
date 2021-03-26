@@ -23,6 +23,17 @@ let forestHabbitant = function(obj){
     console.log("These creature lives in jungle");
   }
 }
+// or
+let habbitantModule = (() =>{
+return {
+  forestHabbitant(obj){
+    console.log("These creature lives in jungle");
+  },
+  cityHabbitant(obj){
+    console.log("mixed reaction");
+  }
+}
+})();
 let kingLion ={
   type:"Hunter",
   eats:"meat"
@@ -31,6 +42,17 @@ let deer={
   type:"innocent",
   eats:"grass"
 }
+habbitantModule.forestHabbitant(kingLion);
 forestHabbitant(lion);
 forestHabbitant(deer);
 deer.lives()
+
+function tree(){
+  let numTree=25
+  this.treeCount= () => {
+    return numTree
+  }
+}
+let environment = new tree()
+console.log(environment.treeCount());
+(()=>{console.log("Immediately invoking function");})();

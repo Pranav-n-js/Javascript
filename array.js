@@ -18,6 +18,11 @@ console.log("Using splice",array);
 
 console.log("Using slice",array.slice(1,3));
 let newArray=[...array]
+console.log(newArray);
+newArray=array//acts like pointers if newArray is changed then it is reflected to old one
+
+newArray.push("ds")
+console.log(newArray);
 console.log("Copying an array using [...<arrayname>]",newArray);
 
 console.log("WE can use spread operator(...) inside an array",["array",...array])
