@@ -17,7 +17,12 @@ export const Hello = () => {
   {/* in properties class is replaced with className and for is replaced with htmlFor*/}
   {/*3rd children (in here <h1> msg </h1> cant be passed it will be shown as a string )*/}
 }
-export const TwoPlayer = (props) => {
-  const {player1, player2}=props
-  return (React.createElement('div',{id:"2Player"},React.createElement("p",{id:"player1"},{props.player1})))
+export const TwoPlayer = ({player1,player2}) => {
+  {/*const {player1, player2}=props*/}
+  return(
+    <div>
+      <p>{player1} scored 77</p>
+      <p> {player2} scored 108</p>
+    </div>
+  )
 }

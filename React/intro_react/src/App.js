@@ -9,7 +9,7 @@ function App() {
       <p> he is a Great player</p>
       <Greet name ="Sundar"></Greet>
       <ClassComp />
-      <TwoPlayer player1="Rishab Pant" player2="KL Rahul" />
+      <TwoPlayer player1="Rishab Pant"  player2="KL Rahul" />
       <Hello/>
     </div>
   );
