@@ -1,6 +1,6 @@
  import React, { Component } from 'react'
 
- class ClassComp extends Component{
+ export class ClassComp extends Component{
    constructor(){
      super()
      {/*states are managed within components*/}
@@ -38,4 +38,37 @@
 
        )}
  }
-export default ClassComp
+
+  export class ClassClick extends Component {
+    constructor(props){
+      super(props)
+      this.state ={
+        message:"Hello"
+      }
+    //  this.clickHandler=this.clickHandler.bind(this)
+    }
+  /*  clickHandler(){ //use arrow function
+      this.setState({
+        message:"Clicked Button"
+      })
+      }
+      */
+      clickHandler = ()=>{
+        this.setState({
+          message:"Clicked Button"
+        })
+      }
+
+    render() {
+      return (
+        <div>
+          <div>{this.state.message}</div>
+          {/*<button onClick={this.clickHandler.bind(this)}> Class Component</button>*/}{/*if you dont bind then error*/}
+          {/*<button onClick={()=>this.clickHandler()}> Class Component</button>*/}
+          <button onClick={this.clickHandler}> Class Component</button>
+
+        </div>
+      );
+    }
+
+  }
